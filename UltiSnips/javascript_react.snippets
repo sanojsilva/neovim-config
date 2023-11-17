@@ -1,0 +1,40 @@
+priority -50
+extends javascript
+
+priority -49
+snippet suf "use effect"
+useEffect(() => {
+	${1}
+}, [${2}])
+endsnippet
+
+snippet sus "use state"
+const [${1}, ${2}] = useState(${3})
+endsnippet
+
+snippet sfc "react functional component"
+export const ${1} = (${2}) => {
+	return (
+		${3}
+	)
+}
+endsnippet
+
+snippet sp "Prop with {}"
+${1}={${2}}
+endsnippet
+
+snippet sps "Prop with ''"
+${1}="${2}"
+endsnippet
+
+snippet sum "use memo"
+const ${1} = useMemo(() => {
+	${2}
+}, [])
+endsnippet
+
+snippet suc "use callback"
+const ${1} = useCallback(${2:() => {
+}}, [])
+endsnippet

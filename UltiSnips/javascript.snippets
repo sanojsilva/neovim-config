@@ -1,0 +1,79 @@
+snippet clg "console.log()"
+console.log(${1})
+endsnippet
+
+snippet clgt "console.log('text', val)"
+console.log('${1}', ${2})
+endsnippet
+
+snippet saf "arrow function"
+const ${1} = (${2}) => {
+	${3}
+}
+endsnippet
+
+snippet saaf "anonymus arrow function"
+(${1}) => {
+	${2}
+}
+endsnippet
+
+snippet sfun "function"
+function ${1} (${2}) {
+	${3}
+}
+endsnippet
+
+snippet scom "multiline comment"
+/*
+ * ${1}
+ */
+endsnippet
+
+snippet sif "if condition"
+if (${1}) {
+	${2}
+}
+endsnippet
+
+snippet sifi "inline if condition"
+if (${1}) ${2}
+endsnippet
+
+snippet scon "const variable"
+const ${1} = ${2}
+endsnippet
+
+snippet slet "let variable"
+let ${1} = ${2}
+endsnippet
+
+snippet stry "try catch block"
+try {
+	${1}
+} catch (${2}) {
+	${3}
+}
+endsnippet
+
+snippet stryf "try catch finally block"
+try {
+	${1}
+} catch (${2}) {
+	${3}
+} finally {
+	${4}
+}
+endsnippet
+
+snippet simp "import {} from 'library'"
+import { ${2} } from "${1}"
+endsnippet
+
+snippet simpd "import something from 'library'"
+import ${2} from "${1}"
+endsnippet
+
+snippet sa "attribute of an object"
+${1}: ${2},
+endsnippet
