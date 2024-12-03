@@ -5,6 +5,7 @@ return {
     "nvim-lua/plenary.nvim",
   },
   config = true,
+  enabled = false,
   keys = {
     { "<leader>m", "<cmd>lua require('harpoon.mark').add_file()<cr>", desc = "Mark file with harpoon" },
     { "<leader>j", "<cmd>lua require('harpoon.ui').nav_next()<cr>", desc = "Go to next harpoon mark" },

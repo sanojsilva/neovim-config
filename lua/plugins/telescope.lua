@@ -74,24 +74,24 @@ return {
     { "<leader>sw", LazyVim.pick("grep_string"), mode = "v", desc = "Selection (Root Dir)" },
     { "<leader>sW", LazyVim.pick("grep_string", { root = false }), mode = "v", desc = "Selection (cwd)" },
     { "<leader>uC", LazyVim.pick("colorscheme", { enable_preview = true }), desc = "Colorscheme with Preview" },
-    {
-      "<leader>ss",
-      function()
-        require("telescope.builtin").lsp_document_symbols({
-          symbols = LazyVim.config.get_kind_filter(),
-        })
-      end,
-      desc = "Goto Symbol",
-    },
-    {
-      "<leader>sS",
-      function()
-        require("telescope.builtin").lsp_dynamic_workspace_symbols({
-          symbols = LazyVim.config.get_kind_filter(),
-        })
-      end,
-      desc = "Goto Symbol (Workspace)",
-    },
+    -- {
+    --   "<leader>ss",
+    --   function()
+    --     require("telescope.builtin").lsp_document_symbols({
+    --       symbols = LazyVim.config.get_kind_filter(),
+    --     })
+    --   end,
+    --   desc = "Goto Symbol",
+    -- },
+    -- {
+    --   "<leader>sS",
+    --   function()
+    --     require("telescope.builtin").lsp_dynamic_workspace_symbols({
+    --       symbols = LazyVim.config.get_kind_filter(),
+    --     })
+    --   end,
+    --   desc = "Goto Symbol (Workspace)",
+    -- },
   },
   opts = function()
     local actions = require("telescope.actions")

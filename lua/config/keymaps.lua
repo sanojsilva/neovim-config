@@ -20,7 +20,7 @@ end
 map("i", "jj", "<esc>", { desc = "Go to normal mode" })
 map({ "n", "v" }, "J", "10j", { desc = "Move 10 lines down", silent = true })
 -- directly set the K keymap to avoid overriding the default help keymap
-map("n", "<leader>ws", "<cmd>w<cr>", { desc = "Save file", silent = true })
+map("n", "<leader>i", "<cmd>w<cr>", { desc = "Save file", silent = true, noremap = true })
 
 vim.keymap.set({ "n", "v" }, "K", "10k", { desc = "Move 10 lines up", silent = true, noremap = true })
 vim.keymap.set("n", "gh", vim.lsp.buf.hover, { desc = "Hover Documentation" })
